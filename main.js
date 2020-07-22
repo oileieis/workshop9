@@ -145,6 +145,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 /* harmony import */ var _pipe_filter_byname_pipe__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pipe/filter-byname.pipe */ "./src/app/pipe/filter-byname.pipe.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _rating_rating_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./rating/rating.component */ "./src/app/rating/rating.component.ts");
+
 
 
 
@@ -169,7 +171,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"],
         _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__["ProductListComponent"],
         _pipe_product_name_pipe__WEBPACK_IMPORTED_MODULE_6__["ProductNamePipe"],
-        _pipe_filter_byname_pipe__WEBPACK_IMPORTED_MODULE_8__["FilterBynamePipe"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _pipe_filter_byname_pipe__WEBPACK_IMPORTED_MODULE_8__["FilterBynamePipe"],
+        _rating_rating_component__WEBPACK_IMPORTED_MODULE_10__["RatingComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
         _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"]] }); })();
@@ -181,7 +184,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"],
                     _product_list_product_list_component__WEBPACK_IMPORTED_MODULE_5__["ProductListComponent"],
                     _pipe_product_name_pipe__WEBPACK_IMPORTED_MODULE_6__["ProductNamePipe"],
-                    _pipe_filter_byname_pipe__WEBPACK_IMPORTED_MODULE_8__["FilterBynamePipe"]
+                    _pipe_filter_byname_pipe__WEBPACK_IMPORTED_MODULE_8__["FilterBynamePipe"],
+                    _rating_rating_component__WEBPACK_IMPORTED_MODULE_10__["RatingComponent"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -522,6 +526,42 @@ ProductListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
                 styleUrls: ['./product-list.component.css'],
             }]
     }], function () { return [{ type: _services_product_service__WEBPACK_IMPORTED_MODULE_1__["ProductService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/rating/rating.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/rating/rating.component.ts ***!
+  \********************************************/
+/*! exports provided: RatingComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RatingComponent", function() { return RatingComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+class RatingComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+RatingComponent.ɵfac = function RatingComponent_Factory(t) { return new (t || RatingComponent)(); };
+RatingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: RatingComponent, selectors: [["app-rating"]], decls: 2, vars: 0, template: function RatingComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "rating works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JhdGluZy9yYXRpbmcuY29tcG9uZW50LmNzcyJ9 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RatingComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-rating',
+                templateUrl: './rating.component.html',
+                styleUrls: ['./rating.component.css']
+            }]
+    }], function () { return []; }, null); })();
 
 
 /***/ }),
